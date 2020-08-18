@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flutter_nuevo_v1
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Curso-Flutter-Platzi
+proyecto del curso de flutter - PLATZI 
+>>>>>>> 00dc9bc7792d87a2da594bd4a1b0c9b8b4eed5b8
