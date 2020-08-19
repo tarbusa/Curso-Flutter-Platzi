@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_nuevo_v1/review_list.dart';
 import 'description_place.dart';
 import 'review.dart';
 
@@ -23,11 +24,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  /*
   String pathImage = "assets/img/viajero.jpg";
   String name = "Tony Tafur";
   String details = "1 review 5 photos";
   String comment = "Me gusta viajar ☺";
-
+  */
   String cadenaDesc = "Bienvenido a Machu Picchu";
   /* "Machu Picchu es una de las 7 maravillas del mundo más visitadas por los turistas, posee hermosas construcciones a base " +
           "de piedras, que fueron talladas con mucha precisión y detalle, es la obra más importante para los incas por haber sido " +
@@ -36,11 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('PERÚ ♥'),
-        ),
-        body:
-            //new DescriptionPlace("Machu Picchu", 4, cadenaDesc)
-            new Review(pathImage, name, details, comment));
+      appBar: AppBar(
+        title: Text('PERÚ ♥'),
+      ),
+      body:
+          //new DescriptionPlace("Machu Picchu", 4, cadenaDesc)
+          ReviewList(),
+    );
   }
 }
