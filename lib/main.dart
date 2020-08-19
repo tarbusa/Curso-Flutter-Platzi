@@ -33,6 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text('PERÚ ♥'),
         ),
-        body: new DescriptionPlace("hola mundo", 4, cadenaDesc));
+        body: new DescriptionPlace("Machu Picchu", 4, cadenaDesc));
   }
 }

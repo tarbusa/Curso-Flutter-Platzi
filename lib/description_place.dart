@@ -5,6 +5,7 @@ class DescriptionPlace extends StatelessWidget {
   int nStar;
   String descriptionPlace;
 
+  /* METODO CONSTRUCTOR */
   DescriptionPlace(this.namePlace, this.nStar, this.descriptionPlace);
 
   @override
@@ -40,13 +41,14 @@ class DescriptionPlace extends StatelessWidget {
           child: Text(
             namePlace,
             style: TextStyle(
+                fontFamily: "Bangers",
                 fontSize: 25.0, // tamaño de letra
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
         ),
         Row(
-          children: <Widget>[star, star, star, star, star_border],
+          children: <Widget>[star, star, star, star_half, star_border],
         )
       ],
     );
@@ -56,6 +58,7 @@ class DescriptionPlace extends StatelessWidget {
       child: Text(
         descriptionPlace,
         style: TextStyle(
+            fontFamily: "Lato",
             fontSize: 15.0,
             fontWeight: FontWeight.w300,
             color: Color(0xFF56575a)),
