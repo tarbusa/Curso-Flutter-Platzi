@@ -14,7 +14,7 @@ class Review extends StatelessWidget {
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
-        size: 13.0,
+        size: 15.0,
       ),
     );
 
@@ -31,7 +31,7 @@ class Review extends StatelessWidget {
     final userInfo = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(left: 20.0, right: 7.0),
+          margin: EdgeInsets.only(left: 20.0, right: 10.0),
           child: Text(
             details,
             textAlign: TextAlign.left,
@@ -46,7 +46,7 @@ class Review extends StatelessWidget {
     );
 
     final userName = Container(
-      margin: EdgeInsets.only(left: 20.0),
+      margin: EdgeInsets.only(top: 10.0, left: 20.0),
       child: Text(
         name,
         textAlign: TextAlign.left,
@@ -55,7 +55,7 @@ class Review extends StatelessWidget {
     );
 
     /*APILAMOS en una columna 
-    (nombre de usiaro, informacion del usuario, y comentario)*/
+    (nombre de usiaro, informacion del usuario(aqui hay un ROW con las estrellas), y el comentario)*/
     final userDetails = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[userName, userInfo, userComment],
