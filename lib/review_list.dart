@@ -16,7 +16,7 @@ class ReviewList extends StatelessWidget {
         Review(
             "assets/img/viajero.jpg", "Viajero Desconocido", details, comment),
         Review("assets/img/licha.jpg", "Sonia Lisseth", details, comment),
-        Review("assets/img/tony.jpg", "Tony Tafur", details, comment),
+        Review("assets/img/tony.jpeg", "Tony Tafur", details, comment),
         Review("assets/img/pelusa.jpg", "Pelusa Pelusa", details, comment),
       ],
     );
