@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_nuevo_v1/review_list.dart';
 import 'description_place.dart';
-import 'gradient_back.dart';
 import 'header_appbar.dart';
 
 void main() {
