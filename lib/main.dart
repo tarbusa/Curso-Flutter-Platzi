@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_nuevo_v1/review_list.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
+import 'header_appbar.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  /* StatusBar es la parte superior del celular ANDROID donde te muestra tu señal de telefono, tu wifi
+  el porcentaje de tu bateria entre otras cosas*/
+  //SystemChrome.setEnabledSystemUIOverlays([]); //--->Esto de aqui oculta todo el StatusBar(ANDROID)
+
+  /*Esto de aqui hace TRANSPARENTE el StatusBar*/
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent, // transparent status bar
+  ));
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -48,11 +61,15 @@ class _MyHomePageState extends State<MyHomePage> {
       children: <Widget>[
         ListView(
           children: <Widget>[
+            /*Aqui esta El nombre del sitio, las 5 estrellas y la descripcion del sitio*/
             DescriptionPlace("Machu Picchu", 4, cadenaDesc),
-            ReviewList()
+            /* Aqui estan la lista de los usuarios que le an comentado CLASE(ReviewList)*/
+            ReviewList(),
+            //GradientBack() --> AQUI NO VA XD
           ],
         ),
-        GradientBack()
+        //GradientBack("Popular"),
+        HeaderAppBar()
       ],
     ));
   }

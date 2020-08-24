@@ -75,10 +75,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - assets/img/viajero.jpg
-    - assets/img/licha.jpg
-    - assets/img/tony.jpeg
-    - assets/img/pelusa.jpg
+    - assets/img/
 
   fonts:
     - family: Bangers
